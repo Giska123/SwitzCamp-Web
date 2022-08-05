@@ -1,0 +1,128 @@
+
+#banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.banner-bg {
+    margin-top: -80px;
+    height: 100vh;
+    animation: slide 12s cubic-bezier(0.19, 1, 0.22, 1) forwards infinite alternate;
+}
+
+        @keyframes slide {
+
+            0% {
+                background-image: 
+                    url("/src/Component/image/swissmount.jpg") ;   
+                filter: brightness(50%);
+                background-size: cover;
+                background-position: center;
+            }
+
+            30% {
+                background-image: 
+                    url("/src/Component/image/swissmount.jpg");   
+                filter: brightness(50%);
+                background-size: cover;
+                background-position: center;
+                }
+
+            70% {
+                background-image: 
+                    url("/src/Component/image/banner2.jpg");
+                filter: brightness(50%);
+                background-size: cover;
+                background-position: center;
+            }
+
+            100% {
+                background-image: 
+                    url("/src/Component/image/banner3.jpg");
+                filter: brightness(50%);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+.banner-content {
+      position:absolute;
+      z-index: 1;
+      text-align: start;
+      color: white;
+      height: 100vh;
+      width: 100%;
+   }
+
+.banner-container {
+    padding: 0 10vw;
+}    
+
+
+.banner-text {
+    padding-top: 45vh;
+    line-height: 40px;
+}
+
+
+.banner-text h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow:1px 1px rgba(0,0,0,0.5);
+}
+ 
+.banner-text p {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.banner-text .btn {
+    position: relative;
+    padding: 7px 30px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2D2D2D;
+    background-color: #849b97;
+    border: 0;
+    cursor: pointer;
+}
+
+.banner-text .btn:hover {
+    color: white;
+    background-color: #2D2D2D;
+}
+
+    @media (max-width: 578px) { 
+
+        .banner-content {
+            text-align: center;
+        }
+
+        .banner-text {
+            padding-top: 39vh;
+            line-height: 40px;
+        }
+
+        .banner-text h2 {
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+
+        .banner-text p {
+            margin: 2vh 0;
+            font-size: 1rem;
+            line-height: 20px;
+        }
+
+    }
+
+
+
+
+
+
+

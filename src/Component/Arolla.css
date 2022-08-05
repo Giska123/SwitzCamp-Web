@@ -1,0 +1,743 @@
+
+
+  .MountainDesc {
+    background: #eeeeee;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #2D2D2D;
+    animation: expand 5s ease forwads;
+}
+
+    @keyframes expand {
+        0% {
+            transform: translateY(300px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+    }
+
+
+.MountainDesc-container {
+    vertical-align: middle;
+    padding: 13vh 8vw;
+}
+
+.MountainDesc-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 5fr; 
+    grid-gap: 18px; 
+    height: 100%;
+}
+
+
+
+    .carousel img {
+        background-color: black;
+        opacity: .7;
+    }
+
+    .carousel.carousel-slider {
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .carousel.carousel-slider .control-arrow:hover  {
+        background:rgba(0, 0, 0, 0);
+    }
+
+    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+        opacity: .6;
+    }
+
+    .carousel .control-next.control-arrow {
+        right: 1vw;
+    }
+
+    .carousel .control-next.control-arrow:before {
+        border: solid #fff;
+        border-width: 0 4px 4px 0;
+        padding: 6px;
+        transform: rotate(-45deg);
+    }
+
+    .carousel .control-prev.control-arrow {
+        left: 1vw;
+    }
+
+    .carousel .control-prev.control-arrow:before {
+        border: solid #fff;
+        border-width: 0 4px 4px 0;
+        padding: 6px;
+        transform: rotate(135deg); 
+    }
+
+    .carousel .control-dots .dot.selected {
+        opacity: .7;
+    }
+
+    .DescImg {
+        width: 25vw;
+        height: 75vh;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+.MountainDesc-body {
+    padding: 0 0 0 60px;
+    width: 100%;
+    height: 100%;
+}
+
+    .Desc-title {
+        position: relative;
+        line-height: 2em;
+    }
+        .MountainDesc-body h2 {
+            font-size: 1.7em;
+        }
+
+        .MountainDesc-body p {
+            font-size: 1em;
+        }
+
+/*Desc-star*/
+
+    .Desc-star {
+        position: relative;
+        padding: 10px 0;
+        display: inline-flex;
+    }
+        
+        .Desc-star h5 {
+            font-size: 1.5em;
+        }
+
+        .Desc-star .star {
+            padding: 6px 9px;
+            color: yellow;
+        }
+
+/*Desc-facility*/
+
+    .Desc-facility  {
+        position: relative;
+        padding: 10px 0;
+    }
+
+        .icon-facility {
+            padding: 12px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+            font-size: 1.5em;
+            line-height: 20px;
+            
+        }
+
+        .icon-facility span {
+            font-size: .6em;
+            margin-left: 8px;
+            padding-top: 3px;
+            position: absolute;
+        }
+
+.Desc-guest, .Desc-date{
+    width: 95%;
+    margin: auto;
+}
+
+/* Desc Card */
+
+    .Desc-card {
+        position: absolute;
+        width: 55%;
+        height: 55%;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: rgb(219, 218, 218);
+    }
+
+    .Desc-page1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .desc-p {
+        margin: 1% 0;
+        font-weight: 600;
+    }
+
+ /*Desc-tent*/
+
+ .Desc-tent {
+    width: 95%;
+    margin: auto;
+}
+    
+
+        .icon-tent {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 0.6em 0.5em;
+            margin-top: 8px;
+            background-color: white;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .icon-tent input {
+            width: 95%;
+            cursor: pointer;
+        }
+
+        .icon-tent label.tent-label {
+            display: block;
+            width: 100%;
+            border-radius: 2px;
+        } 
+
+            .tent_ {
+                font-size: 1em;
+            }
+
+        input[type="radio"]:checked ~ .tent-label {
+            background-color: #57746f81;
+            height: 15.3vh;
+        }
+
+        .price {
+            position: absolute;
+            display: none;
+            width: 100%;
+            left: 50%;
+            top: 60%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 1em;
+            font-weight: 400;
+            z-index: 10;
+        } 
+
+        .price p {
+            font-size: .9em;
+            margin-left: .4em;
+        }
+
+        .price input {
+            position: relative;
+            margin-top: 1%;
+            width: auto;
+            opacity: 1; 
+        }
+
+        .price label {
+            position: absolute;
+            margin-top: 1.2%;
+            font-size: .75em;
+            font-weight: 300;
+            color: #2d2d2d;
+        }
+
+        :checked ~ .price  {
+            display: block;
+        }
+        
+ /*Desc-guest*/
+
+        .Desc-guest {
+            margin-top: 1%;
+            margin-bottom: 4%;
+        }
+
+        .form__input {
+            color: #333;
+            font-size: .9rem;
+            margin: 8px 0;
+            padding: .5em .7em .3em .7em;
+            border-radius: 3px;
+            background-color: white;
+            border: none;
+            width: 100%;
+            display: block;
+            border-bottom: 0.3rem solid transparent;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .form__input:placeholder-shown + .form__label {
+            opacity: 0;
+            display: none;
+            transform: translateY(-4rem);
+            transition: all 0.3s ease-in-out;
+        }
+
+/*Desc-date*/
+
+        .Desc-date {
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+
+        .datepick {
+            width: 100%;
+            height: auto;
+            /* width: 20vw; */
+            font-size: .9rem;
+            border: 0;
+            border-radius: 2px;
+            color: rgba(0, 0, 0, .8);
+            background-color: rgb(219, 218, 218);
+            text-align: center;
+        }
+
+        input.dates {
+            width: 92%;
+            height: 10%;
+            margin-top: 3%;
+            padding: .65em .8em;
+            border: 0;
+            border-radius: 3px;
+        }
+        
+        .dt-1 {
+            float: left;
+            width: 50%;
+        }
+
+        .dt-2 {
+            float: right;
+            width: 50%;
+        }
+
+/* Check */
+
+        .checkEnd {
+            position: absolute;
+            margin-top: 9%;
+            margin-left: 2%;
+        }
+
+        .checkEnd label{
+            font-size: .8em;
+        }
+
+        input.check {
+            width: .9em;
+            height: .9em;
+          }
+
+/*Desc-next*/
+
+        .Desc-next a, .Desc-back a {
+            position: absolute;
+            bottom: 0;
+            font-size: 1.6em;
+            cursor: pointer;
+            color:#333;
+        }
+
+        .Desc-next a{
+            right: 4.5%;
+            bottom: 1%;
+        }
+
+        .Desc-back a{
+            left: 4.5%;
+            bottom: 1%;
+        }
+
+        .Desc-next a:hover, .Desc-back a:hover {
+            color:#849b97;
+        }
+
+
+/*Desc-btn*/
+
+    .Desc-btn {
+        position: absolute;
+        text-align: end;
+        bottom: 3%;
+        right: 4.5%;
+    }
+
+        .Desc-btn button {
+            border: 0;
+            padding: 10px 15px;
+            font-size: .9em;
+            border-radius: 3px;
+            color: white;
+            background-color: #849b97;
+            cursor: pointer;
+        }
+        
+        .Desc-btn button:disabled,
+        .Desc-btn button[disabled] {
+            color: #2d2d2d8a;
+            background-color: #8b8b8be3;
+        }
+
+       
+
+/* success / failed-message */
+
+
+    .message {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.555);
+        width: 100%;
+        height: 100%;
+        z-index: 6;
+    }
+
+    .message-container, .message-container2 {
+        position: absolute;
+        width: 40%;
+        height: 30%;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border-radius: 4px;
+        box-shadow:  1px 2px 10px 2px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .message-container {
+        color: #333;
+        background-color: white;
+    }
+
+    .message-text {
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .msg-icon {
+        font-size: 2.5em;
+        color: #849b97;
+    }
+
+    .message-text  h1 {
+        font-size: 1.5em;
+        margin: .3em 0;
+    }
+
+    .message-text  p {
+        font-size: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .message-text button {
+        padding: 3% 4vw;
+        font-size: 1em;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 0;
+    }
+
+        .btn-msg1 {  
+            color: white;
+            background-color: #57746f;
+        }
+        
+        .btn-msg2 {
+            margin-top: 10%;
+            color: white;
+            background-color: #57746f;
+        }
+
+/* back btn */
+
+    .back-btn {
+        position: absolute;
+        text-align:right;
+        bottom: -8%;
+        right: 1%;
+        font-size: 1.3em;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .back-btn a {
+        border: 0;
+        font-size: 1em;
+        color: black;
+    }
+
+/* responsive tablet */
+
+    @media (max-width: 768px) {
+
+        .MountainDesc-container {
+            vertical-align:unset;
+            padding: 8vh 8vw;
+        }
+
+        .MountainDesc-card {
+            grid-template-columns: 1fr;
+            grid-gap: 35px; 
+        }
+
+            .DescImg {
+                width: 100%;
+                height: 24vh;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+            }
+
+        .MountainDesc-body {
+            padding: 0 10px;
+        }
+
+            .MountainDesc-body p {
+                font-size: 1.1em;
+            }
+
+        .Desc-title {
+            margin-top: 0;
+        }
+
+        #Desc-guest, .Desc-tent, .Desc-date{
+            height:25%;
+        }
+
+        .Desc-card {
+            height: 143%;
+            width: 95%;
+        }
+
+            input[type="radio"]:checked ~ .tent-label {
+                height: 13vh;
+            }
+
+            .price p{
+                font-size: .9em;
+            }
+
+        .back-btn {
+            position: relative;
+            bottom: -29vh;
+            margin-bottom: -15%;
+            right: 4.5%;
+        }
+    }
+
+/* responsive mobile */
+
+        @media (max-width: 578px) {
+
+            .MountainDesc { 
+                height: 110vh;
+            }
+
+            .MountainDesc-card {
+                position: relative;
+                grid-gap: 20px;
+            }
+
+            .MountainDesc-container {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 8vh 8vw 0 8vw;
+            }
+
+            .MountainDesc-header {
+                position: absolute;
+                height: 25vh;
+            }
+
+            .MountainDesc-body {
+                margin-top: 25vh;
+                position: absolute;
+                height: 70vh;
+            }
+
+                .MountainDesc-body h2 {
+                    font-size: 1.35em;
+                }
+
+                .MountainDesc-body p {
+                    font-size: .85em;
+                    line-height: 1.2em;
+                }
+
+            .Desc-title {
+                position: relative;
+            }
+
+                .Desc-title p {
+                    font-size: .75em;
+                }
+            
+            .Desc-star {
+                position: relative;
+            }
+            
+                .Desc-star h5 {
+                    font-size: 1.2em;
+                }
+
+                .Desc-star .star {
+                    padding: 3px 9px;
+                }
+
+            .Desc-facility {
+                position: relative;
+            }
+
+                .icon-facility {
+                    font-size: 1.2em;
+                }
+
+                .icon-facility span {
+                    font-size: .6em;
+                    padding-top: 0;
+                }
+
+            .Desc-guest, .Desc-date {
+                height: 15%;
+                font-size: .8em;
+            }
+
+            .desc-p {
+                position: relative;
+            }
+
+            .Desc-card {
+                position: relative;
+                width: 100%;
+                height: 32vh;
+            }
+
+            #Desc-page1 {
+                height: 100%;
+                width: 95%;
+            }
+        
+
+            .Desc-tent {
+                width: 97%;
+                padding: 0;
+            }
+
+                .icon-tent {
+                    margin: 4px 0;
+                    padding: 0.4em 0.5em;
+                }
+                
+                input[type="radio"]:checked ~ .tent-label {
+                    height: 13vh;
+                } 
+
+                .tent-label {
+                    font-size: .8em;
+                }
+
+                .tent_ {
+                    font-size: .8em;
+                }
+
+                .price {
+                    font-size: .9em;
+                }
+
+                .price input{
+                    margin-top: 1.5%;
+                    margin-left: .3em;
+                }
+
+                .price label {
+                    margin-top: 2.2%;
+                    font-size: .6em;
+                }
+
+                .price p {
+                    font-size: .7em;
+                }
+
+
+                .form__input {
+                    padding: .3em .5em 0 .5em;
+                    font-size: .8em;
+                }
+
+                .form__label {
+                    font-size: .7em;
+                }
+
+                input.dates {
+                    font-size: .68em;
+                    padding: .3em .2em;
+                    /* width: 43%; */
+                }
+
+                .dt-1 span, .dt-2 span{
+                    font-size: .75em;
+                }
+
+                .checkEnd {
+                    margin-top: 13%;
+                    margin-left: 1%;
+                }
+        
+                .checkEnd label{
+                    font-size: .6em;
+                }
+
+                input.check {
+                    width: .6em;
+                    height: .6em;
+                  }
+
+
+            .Desc-next a, .Desc-back a {
+                font-size: 1.3em;
+            }
+
+        .Desc-btn {
+            bottom: 2%;
+        }
+
+            .Desc-btn button {
+                font-size: .6em;
+                padding: 8px 11px;
+            }
+
+        .back-btn {
+            position: relative;
+            margin-top: 97vh;
+            font-size: 1em;
+            bottom: 5vh;
+            right: 3%;
+        }
+
+        .message-container, .message-container2 {
+            width: 70%;
+            height: 60%;
+        }
+
+        .message-text h1 {
+            margin-bottom: .6em;
+        }
+
+        .message-text button {
+            padding: 3% 10vw;
+        }
+
+    }
+
+    @media (max-width: 280px) {
+        input[type="radio"]:checked ~ .tent-label {
+            height: 15vh;
+        }
+
+    }
+

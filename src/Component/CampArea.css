@@ -1,0 +1,97 @@
+.camp {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.areas-container {
+    padding: 4%;
+}
+
+.areas-text {
+    line-height: 30px;
+    margin-bottom: 5vh;
+}
+
+.areas-text h2 {
+    font-size: 2rem;
+}
+
+.areas-text p {
+    font-size: 1.4rem;
+}
+
+.areas-img {
+    width: 100%;
+    display: flex;
+}
+
+.areas{
+    display: inline-block;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    line-height: 450px;
+}
+
+.areas-camp1 span {
+    color:#2D2D2D;
+    transition: all 0.3s ease-in-out;
+}
+
+    .areas-camp1:hover span {
+        transition: all 0.3s ease-in-out;
+        color:white;
+    }
+
+.areas-camp1 {
+    width: 46vw;
+    height: 450px;
+    background-color: #849b97;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+}
+
+    .areas-camp1:hover {
+        transition: all 0.5s ease-in-out;
+        width: 60vw;
+        background-image: url("/src/Component/image/lake1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        cursor: pointer;
+
+    }
+
+.areas-camp2 span {
+    color:#849b97;
+}
+
+    .areas-camp2:hover span {
+        transition: all 0.3s ease-in-out;
+        color:white;
+    }
+
+.areas-camp2 {
+    width: 46vw;
+    height: 450px;
+    background-color: #2D2D2D;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+}
+
+    .areas-camp2:hover {
+        transition: all 0.5s ease-in-out;
+        width: 60vw;
+        background-image: url("/src/Component/image/mountain.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        cursor: pointer;
+
+    }
+
+
+

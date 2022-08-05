@@ -1,0 +1,192 @@
+
+#Explore {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+    
+    .explore {    
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-color: #eeeeee;
+        top: 0;
+        bottom: 0;
+    }
+
+    .area-container {
+        position: absolute;
+        padding: 10vh 6vw 8vh 10vw;
+    }
+
+    .area {
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr; 
+        grid-gap: 18px; 
+    }
+
+    .area-text {
+        padding-right: 1vw;
+        text-align: start;
+        line-height: 37px;
+        color: #2D2D2D;
+    }
+
+        .area-text h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 4vh;
+        }
+
+        .area-text p{
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 29px;
+        }
+
+        .area-camp{
+            float: left;
+            margin: 0 20px;
+            background: #2D2D2D;
+            border-radius: 10px;
+            padding: 0;
+            box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.6);
+            transform: translateY(-0.5em);
+        }
+
+        .imgbtn {
+            display: block;
+            width: 27vw;
+            height: 60vh;
+            background-size: cover;
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .imgbtn:hover {
+            box-shadow: 
+                inset -550px 0 0 0 rgba(45, 45, 45, .6),
+                0 1px 2px rgba(0,0,0,0.1);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .ex-img-1 {
+            background-image: url("/src/Component/image/lake.jpg");
+        }
+
+        .ex-img-2 {
+            background-image: url("/src/Component/image/mountain.jpg");
+        }
+
+
+        .imgbtn span {
+            color:#fff; 
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.2s linear;
+            
+        }
+
+        .imgbtn:hover span {
+            cursor: pointer;
+            font-size: 2.3rem;
+            letter-spacing: 0.2rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.2s ease-in-out;
+            }
+            
+    /* @media (max-width: 860px) {
+        .area-container {
+            padding: 6vh 9vw 6vh 11vw;
+            
+        }
+
+        .area-img img {
+            width: 24vw;
+            height: 60vh;
+        }
+
+    } */
+
+    @media (max-width: 768px) {
+
+        .area {
+            display:block;
+            margin-top: 0;
+        }
+
+        .area-container {
+            padding: 8vh 14vw;
+        }
+
+        .area-text {
+            padding-right: 0;
+            width: 100%;
+            line-height: 0;
+            margin: 0 0 2.5vh 0;
+        }
+            .area-text h2 {
+                line-height: 45px;
+                margin-bottom: 1vh;
+            }
+            .area-text p{
+                line-height: 15px;
+            }
+
+    
+        .area-camp {
+            display: block;
+            text-align: center;
+            float: none;
+            margin: 6vh 0 0 0;
+        }
+
+        .imgbtn{
+            width: 72vw;
+            height: 28vh;
+        }
+
+        .imgbtn:hover {
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+
+    @media (max-width: 578px) {
+
+            .area-text h2 {
+                font-size: 1.5rem;
+                line-height: 30px;
+            }
+    
+            .area-text p {
+                font-size: 1.1rem;
+                line-height: 22px;
+            }
+
+
+        .area-camp {
+            margin: 5vh 0 0 0;
+        }
+
+        .imgbtn span {
+            font-size: 1.3rem;
+        }
+
+        .imgbtn:hover span {
+            font-size: 1.6rem;
+        }
+
+        .imgbtn:hover {
+            box-shadow: 
+                inset -350px 0 0 0 rgba(45, 45, 45, .6);
+        }
+    }
