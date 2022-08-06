@@ -13,8 +13,8 @@ I am Giska. I am a beginner Frontend.
  <a href="https://en.wikipedia.org/wiki/JavaScript">
 <img alt="choubari" src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" width="40">
   </a>
- <a href="https://reactjs.org/logo-og.png">
-<img alt="choubari" src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" width="40">
+ <a href="https://reactjs.org">
+<img alt="choubari" src="https://reactjs.org/logo-og.png](https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" width="40">
   </a>
  <a href="https://www.figma.com/">
 <img alt="choubari" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="40">
